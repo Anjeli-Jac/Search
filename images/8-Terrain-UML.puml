@@ -1,0 +1,39 @@
+@startuml
+
+skinparam defaultFontName monospaced
+hide empty members
+
+class Terrain {
+    + Terrain(String)
+    + Location getGoal()
+    + int getHeight()
+    + int getWidth()
+    + boolean inTerrain(Location)
+    + boolean isWall(Location)
+}
+
+note right: Note that all getters\nand setters of the Terrain\nclass are called with specific\nLocations in the terrain.
+
+class Location {
+    + Location()
+    + Location get(Direction)
+    + int getX()
+    + int getY()
+}
+
+enum Direction {
+    + Direction()
+    + Direction[] getClockwise()
+    + Direction[] getCounterClockwise()
+    + Direction opposite()
+    + NONE
+    + UP
+    + DOWN
+    + LEFT
+    + RIGHT
+}
+
+Terrain o-- Location
+Location o-right- Direction
+
+@enduml

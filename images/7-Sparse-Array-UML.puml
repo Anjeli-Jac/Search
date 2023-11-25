@@ -1,0 +1,12 @@
+@startuml
+
+skinparam defaultFontName monospaced
+hide empty members
+
+class SparseArray< T > {
+    + SparseArray<T>(T)
+    + T get(Location)
+    + void set(Location,T)
+}
+
+@enduml

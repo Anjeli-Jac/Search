@@ -1,0 +1,1 @@
+All images copyright (c) 2023 Ian Clement & Vik Singh.  All rights reserved.

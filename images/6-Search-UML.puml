@@ -1,0 +1,27 @@
+@startuml
+
+skinparam defaultFontName monospaced
+hide empty members
+
+class Search {
+    + Traversable<Direction> solve(Location)
+    + void clearAllColors()
+    + void setColorAtLocation(Location, Color)
+    + Color colorAt(Location)
+    + boolean inVerboseMode()
+}
+
+class DFS {
+    + DFS()
+    + Traversable<Direction> solve(Location)
+}
+
+class BFS {
+    + BFS()
+    + Traversable<Direction> solve(Location)
+}
+
+Search <|-- DFS
+Search <|-- BFS
+
+@enduml
