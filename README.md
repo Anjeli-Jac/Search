@@ -1,9 +1,5 @@
 # Assignment 3 - 🔍 Search
 
-- 💯 **Worth**: 7%
-- 📅 **Due**: Posted on Moodle
-- 🙅🏽‍ **Penalty**: Late submissions lose 10% per day to a maximum of 3 days. Nothing is accepted after 3 days and a grade of 0% will be given.
-
 ## 🎯 Objectives
 
 - **Implement** a depth-first search algorithm using a stack data structure.
